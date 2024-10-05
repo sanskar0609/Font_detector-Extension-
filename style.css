@@ -1,0 +1,94 @@
+
+
+
+body {
+  width: 300px;
+  min-height: 50px; 
+  font-family: 'Times New Roman', Times, serif; 
+  padding: 20px;
+  background-color: rgba(4, 4, 4, 0.848);
+  border: 2px solid white;
+  border-radius: 20px;
+  overflow: auto; 
+  position: relative;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: rgb(245, 217, 62);
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #494848;
+  border: 2px solid white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+button:hover{
+  background-color: #3b3f40;
+  font-size: medium;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: rgb(199, 214, 216);
+}
+.logo{
+    display: flex;
+    gap:30px;
+}
+.main1{
+  display: flex;
+  position: absolute;
+  opacity: 20%;
+  align-items: flex-end;
+  left: 80%;
+  bottom: 0;
+}
+
+img{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(4, 4, 4);
+    transition: transform 0.3s ease;
+  
+}
+img:hover{
+  width: 65px;
+  height: 65px;
+  transform: scale(1.05);
+}
+
+#toast {
+  visibility: hidden; 
+  min-width: 250px; 
+  margin-left: -125px; 
+  background-color: #333; 
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  padding: 16px; 
+  position: fixed;
+  z-index: 1; 
+  left: 50%;
+  bottom: 30px; 
+  font-size: 10px; 
+  transition: opacity 0.5s, bottom 0.5s ease-in-out; 
+}
+
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px; 
+}
